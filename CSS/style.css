@@ -1,0 +1,184 @@
+/*
+Description: Styling for Assessment 1 (SPA)
+Author: Alex Menis
+Email: alex.menis@student.curtin.edu
+Tags: SPA
+*/
+
+/*Font, line-height and width of the page changes*/
+body {
+    font-family: helvetica, sans-serif;
+    margin: 0 auto;
+    width: 1300px;
+    line-height: 30px;
+    background: var(--background-default);
+}
+
+/*Used to position the Curtin University logo onto the webpage*/
+.floatrightimage {
+    float: right;
+    height: 50px;
+    width: 280px;
+}
+
+/*Used to avoid using the bold <b> tags, use of the bolded class*/
+.bolded {
+    font-weight: bold; 
+}
+
+/*All the following is used to attempt to make the page responsive to when made smaller*/
+/*As shown to be responsive when displayed with the Developer tools (Dimensions: Responsive) */
+@media only screen and (max-width:500px) {
+    h1 {
+        width: 100%;
+        position: absolute;
+        top: 55px;
+        right: 0px;
+        z-index: 2;
+    }
+    h2 {
+        width: 24%;
+        padding: 50px 0px 0px 10px;
+        top: 50px;
+        font-size: 16px;
+    }
+    h3 {
+        width: 100%;
+        padding: 0px 20px 0px;
+        height: 20px;
+        font-size: 12px;
+    }
+    h4 {
+        width: 100%;
+        position: absolute;
+        top: 90px;
+        right: 0px;
+        z-index: 2;
+    }
+    p {
+        width: 25%;
+        padding: 28px 20px 20px 20px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    li {
+        width: 22%;
+        padding: 0px 10px 0px 0px;
+        font-size: 11px;
+    }
+    hr {
+        width: 100%;
+        position: absolute;
+    }
+    /*The images needed to be deleted as soon as the screen went smaller due to them being to big to fit onto a phone device*/
+    img {
+        display: none;
+    }
+    /*Table one and two have the added display: none added due to overlapping (More explained in the README.txt file!*/
+    .table1 {
+        position: absolute;
+        margin: auto;
+        line-height: 10px;
+        right: 40px;
+        display: none;
+    }
+    .table2 {
+        position: absolute;
+        width: 10px;
+        line-height: 10px;
+        left: 15px;
+        display: none;
+    }
+
+    .table3 {
+        position: absolute;
+        width: 100%;
+        line-height: 12px;
+        right: 15px;
+    }
+    td, th {
+        font-size: 9px;
+        padding: 0px 20px 0px 20px;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: 26px
+}
+
+
+h4 {
+    text-align: center;
+    font-size: 18px;
+}
+
+p, h1{
+    transition: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+
+/*hr block specifications to break up paragraphs*/
+hr {
+    display: block;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+}
+
+/*3 table specifications to differentiate from one another as they contain different information*/
+table.table1 {
+    border-collapse: collapse;
+    border: 0.5px solid black;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.table2 {
+    border: 1px solid black;
+    width: 95%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.table3 {
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Information/content that will be contained inside the tables*/
+td, th, tr {
+    border: 1px solid black;
+    padding: .5rem;
+    text-align: left;
+}
+
+td, th {
+    text-align: center;
+}
+
+
+/*CSS style used for the dark theme*/
+.light {
+    --primary-color: #f00;
+    --secondary-color: #000;
+    --background-default: #efefef;
+    --background-paper: #fff;
+}
+
+/*A dark blue colour was used rather than black for visability reasons, and because i enjoy that colour!*/
+.dark {
+    --primary-color: #0f0;
+    --secondary-color: #fff;
+    --background-default: #29293d;
+    --background-paper: #111;
+    color: white;
+}
