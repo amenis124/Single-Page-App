@@ -6,7 +6,7 @@ QUESTION 1: Identify what aspects of the work have been correctly implemented an
 
 - Due to me only having one JavaScript to switch between themes, I would of liked to implement 
 a font increaser and a button to return the font to a previous state but i was unable to get
-my whole code wrapped inside a <div class>, only parts of my HTML would go big and small. 
+my whole code wrapped inside a <!--<div class>-->, only parts of my HTML would go big and small. 
 Although extending from that, i feel like having unnecessary themes like background colours etc
 would of been redundant and taken away from the assignment. 
 My font increaser would of went something like this:
@@ -14,7 +14,7 @@ HTML: At the top of my HTML would be options to increase or decrease the font si
 the users preference;
 
 
-<select onchange="fontChanger(this);" size="10">
+<!--<select onchange="fontChanger(this);" size="10">
   <option>x-small</option>
   <option>small</option>
   <option>medium</option>
