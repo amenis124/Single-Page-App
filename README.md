@@ -12,16 +12,16 @@ would of been redundant and taken away from the assignment.
 My font increaser would of went something like this:
 HTML: At the top of my HTML would be options to increase or decrease the font size depending on 
 the users preference;
-<select onchange="fontChanger(this);" size="10">
+<!--<select onchange="fontChanger(this);" size="10">
   <option>x-small</option>
   <option>small</option>
   <option>medium</option>
   <option>large</option>
   <option>x-large</option>  
-</select>
+</select>-->
 
-<p id="increaser">Faculty of Business and Law</p>
-etc. 
+<!--<p id="increaser">Faculty of Business and Law</p>
+etc. -->
 
 The JavaScript would look something like this;
 function fontChanger(selectTag) {
@@ -48,9 +48,9 @@ i have spent around 20-25 hours to finish this assignment. Most of my time was s
 HTML and CSS, perfecting the text to how i wanted it to look. 
 
 
-I have placed my references here due to it being to cluttered inside my code:
+<!--I have placed my references here due to it being to cluttered inside my code:
 HTML <hr> tags used from: https://www.w3schools.com/tags/tag_hr.asp 
-Tables used from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table6
+Tables used from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table6 -->
 
 Styles and themes in css:
 This site was used for my links in the HTML document;
